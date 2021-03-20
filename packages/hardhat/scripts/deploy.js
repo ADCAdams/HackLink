@@ -7,10 +7,15 @@ const R = require("ramda");
 
 const main = async () => {
 
+  const buyerAdd = "0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199"
+  const sellerAdd = "0xdd2fd4581271e230360230f9337d5c0430bf44c0"
+  const amountArg = 696969
+
   console.log("\n\n 📡 Deploying...\n");
 
-  const yourContract = await deploy("YourContract") // <-- add in constructor args like line 19 vvvv
+  //const yourContract = await deploy("YourContract") // <-- add in constructor args like line smartcontractwallet
 
+  const descrow = await deploy("Descrow",[buyerAdd,sellerAdd,amountArg])
   //const yourContract = await ethers.getContractAt('YourContract', "0xaAC799eC2d00C013f1F11c37E654e59B0429DF6A") //<-- if you want to instantiate a version of a contract at a specific address!
   //const secondContract = await deploy("SecondContract")
 
