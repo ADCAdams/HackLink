@@ -232,15 +232,6 @@ function App(props) {
             */}
 
             <Contract
-              name="YourContract"
-              signer={userProvider.getSigner()}
-              provider={localProvider}
-              address={address}
-              blockExplorer={blockExplorer}
-            />
-
-
-            <Contract
               name="Descrow"
               signer={userProvider.getSigner()}
               provider={localProvider}
